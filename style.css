@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+}
+
+.logo h1 {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  text-transform: lowercase;
+}
+
+.first__section {
+  background-image: url(./images/desktop/image-header.jpg);
+  height: 800px;
+  background-size: contain;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

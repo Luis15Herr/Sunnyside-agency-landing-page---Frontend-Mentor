@@ -13,6 +13,30 @@ $White: hsl(0, 0%, 100%);
 $font-family: "Barlow", sans-serif;
 $font-family-cursive: "Fraunces", serif;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1440px;
+  margin: auto;
+}
+header {
+  position: fixed;
+}
+.logo {
+  h1 {
+    color: white;
+    font-family: $font-family;
+    text-transform: lowercase;
+  }
+}
+.first__section {
+  background-image: url(./images/desktop/image-header.jpg);
+  height: 800px;
+  background-size: contain;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
