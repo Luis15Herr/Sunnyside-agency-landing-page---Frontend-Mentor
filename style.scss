@@ -21,16 +21,44 @@ $font-family-cursive: "Fraunces", serif;
 .container {
   width: 1440px;
   margin: auto;
+  position: relative;
 }
 header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  width: 1440px;
+  padding: 35px 30px;
 }
 .logo {
-  h1 {
-    color: white;
-    font-family: $font-family;
-    text-transform: lowercase;
-  }
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  text-decoration: none;
+  color: white;
+  font-family: $font-family;
+  margin-right: 45px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item--contact {
+  text-transform: uppercase;
+  background-color: $White;
+  font-family: $font-family-cursive;
+  color: $Darkblue;
+  text-decoration: none;
+  height: 55px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-weight: 900;
 }
 .first__section {
   background-image: url(./images/desktop/image-header.jpg);
