@@ -34,7 +34,7 @@ body {
   box-sizing: border-box;
 }
 .container {
-  width: 1440px;
+  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -44,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  width: 1440px;
+  width: 100%;
   padding: 35px 40px;
   z-index: 5000;
 }
@@ -88,10 +88,11 @@ header {
   font-weight: 900;
   margin-right: 8px;
 }
-.first__section {
-  background-image: url(./images/desktop/image-header.jpg);
-  height: 800px;
-  background-size: contain;
+
+.first__section-img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
 }
 .first__text {
   position: absolute;
@@ -103,12 +104,14 @@ header {
   font-weight: 900;
   letter-spacing: 10.3px;
   width: 100%;
+  top: 0;
   text-align: center;
 }
 .first__arrow {
   position: absolute;
   transform: translate(-50%, 358px);
   left: 50%;
+  top: 0;
 }
 .row {
   display: grid;
@@ -119,7 +122,8 @@ header {
 .row__left,
 .graphic__row,
 .photography__row {
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .row__content--rigth {
   padding-left: 165px;
@@ -264,6 +268,7 @@ header {
 }
 .ilustration {
   height: 100%;
+  width: 25%;
 }
 footer {
   height: 338px;
@@ -314,15 +319,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
-    width: 100%;
-  }
-  .first__section {
-    height: 565px;
-  }
-  .container {
-    width: 100%;
-  }
   .row {
     grid-template-rows: 450px;
   }
@@ -371,5 +367,23 @@ footer {
     br {
       display: none;
     }
+  }
+  .row__p {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    grid-template-rows: 530px;
+  }
+  .first__text {
+    font-size: 1.8em;
+    top: -50px;
+  }
+  .first__arrow {
+    top: -150px;
   }
 }
