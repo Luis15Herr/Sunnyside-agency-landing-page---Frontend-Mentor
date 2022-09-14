@@ -42,7 +42,23 @@
 
         <a href="#" class="nav__item--contact">Contact</a>
       </div>
-      <div class="nav__trigger">X</div>
+      <div class="nav__trigger" onclick="triggerNav">
+        <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+            fill="#FFF"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="mobile__nav">
+        <div class="mobile__nav-wrapper">
+          <a href="#" class="mobile__nav-item">About</a>
+          <a href="#" class="mobile__nav-item">Services</a>
+          <a href="#" class="mobile__nav-item">Projects</a>
+          <a href="#" class="mobile__nav-item--contact">Contact</a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="first__section">
@@ -277,5 +293,6 @@
         >Luis Herrera⚡</a
       >.
     </div>
+    <script src="js.js"></script>
   </body>
 </html>

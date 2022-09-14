@@ -340,7 +340,61 @@ footer {
 footer {
   background-color: #90d4c5;
 }
+.mobile__nav {
+  width: 80%;
+  position: absolute;
+  background: white;
+  left: 50%;
+  transform: translate(-50%, 70px);
+  opacity: 0;
+  pointer-events: none;
+}
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.mobile__nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  position: relative;
+  justify-content: center;
 
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0 0 25px 25px;
+    border-color: transparent transparent #ffffff transparent;
+    border-style: solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-95%);
+  }
+}
+.mobile__nav-item {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 35px;
+  font-family: $font-family;
+  color: $Darkgrayishblue;
+}
+.mobile__nav-item--contact {
+  background-color: $Yellow;
+  width: 145px;
+  height: 55px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-cursive;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
 @media screen and (max-width: 1024px) {
   .row {
     grid-template-rows: 450px;
