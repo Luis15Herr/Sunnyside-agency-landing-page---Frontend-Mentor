@@ -430,15 +430,17 @@ footer {
   position: absolute;
   background: white;
   left: 50%;
-  -webkit-transform: translate(-50%, 70px);
-          transform: translate(-50%, 70px);
-  opacity: 0;
-  pointer-events: none;
+  -webkit-transform: translate(-50%, -1000px);
+          transform: translate(-50%, -1000px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .active {
-  opacity: 1;
-  pointer-events: all;
+  -webkit-transform: translate(-50%, 70px);
+          transform: translate(-50%, 70px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .mobile__nav-wrapper {

@@ -345,13 +345,12 @@ footer {
   position: absolute;
   background: white;
   left: 50%;
-  transform: translate(-50%, 70px);
-  opacity: 0;
-  pointer-events: none;
+  transform: translate(-50%, -1000px);
+  transition: 0.3s ease-in-out;
 }
 .active {
-  opacity: 1;
-  pointer-events: all;
+  transform: translate(-50%, 70px);
+  transition: 0.3s ease-in-out;
 }
 .mobile__nav-wrapper {
   display: flex;
