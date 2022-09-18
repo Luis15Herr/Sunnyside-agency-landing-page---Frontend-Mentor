@@ -91,6 +91,7 @@ header {
   border-radius: 30px;
   font-weight: 900;
   margin-right: 8px;
+  font-size: 0.85em;
 }
 
 .first__section-img--mobile {
@@ -200,6 +201,7 @@ header {
   bottom: -3px;
   border-radius: 2px;
   background-color: #fad400;
+  opacity: 0.3;
   width: 115%;
   position: absolute;
   left: 50%;
@@ -352,7 +354,7 @@ header {
 }
 
 footer {
-  height: 338px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

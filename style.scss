@@ -79,6 +79,7 @@ header {
   border-radius: 30px;
   font-weight: 900;
   margin-right: 8px;
+  font-size: 0.85em;
 }
 .first__section-img--mobile {
   display: none;
@@ -169,6 +170,7 @@ header {
     bottom: -3px;
     border-radius: 2px;
     background-color: $Yellow;
+    opacity: 0.3;
     width: 115%;
     position: absolute;
     left: 50%;
@@ -288,7 +290,7 @@ header {
   width: 25%;
 }
 footer {
-  height: 338px;
+  height: 350px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
